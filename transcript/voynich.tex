@@ -3,6 +3,8 @@
 \documentclass{scrarticle}
 
 \usepackage[english]{babel}
+\usepackage[natbib,authordate,backend=bibtex]{biblatex-chicago}
+   \bibliography{references}
 \usepackage[a4paper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
 \usepackage{fontspec}
    \newfontfamily\eva{fairfax_eva_hd.ttf}
@@ -153,5 +155,7 @@ In the following, mainly to promote easier readability and comparability, a tran
 \noindent\begin{locator}[P13]\end{locator} {\eva shar shkaiin qokchy yty cthal chky}\\
 \noindent\begin{locator}[P14]\end{locator} {\eva dain sheam yteam}\\
 
+\clearpage
+\printbibliography
 
 \end{document}
