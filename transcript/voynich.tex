@@ -7,6 +7,8 @@
 \usepackage[natbib,authordate,backend=bibtex]{biblatex-chicago}
    \bibliography{references}
 \usepackage[a4paper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage{wrapfig,graphicx}
+   \graphicspath{ {./figures/} }
 \usepackage{fontspec}
    \newfontfamily\eva{fairfax_eva_hd.ttf}
 \usepackage{xcolor}
@@ -25,7 +27,7 @@
 
 \section{Introduction}
 In the following, mainly to promote easier readability and comparability, a transcription of the manuscript is provided, based on a transliteration by \citet{takahashi_voynich_2004}.
-Takahashi's transliteration is obtained in an automatically capitalized version of the \textit{European} or \textit{Extensible Voynich Alphabet} (EVA), using the \textit{Interlinear Transcription Archive Extractor} by \citet{schwerdtfeger_voynich_2004}.\footnote{\citet{schwerdtfeger_voynich_2004} builds on an online archive of Voynich transcriptions that was maintained by Jorge Stolfi \citep{stolfi_voynich_1998}. For a general overview of transcription efforts, see \citet{zandbergen_text_2023}.}
+Takahashi's transliteration is obtained in an automatically capitalized version of the \textit{European} or \textit{Extensible Voynich Alphabet} (EVA), using the \textit{Interlinear Transcription Archive Extractor} by \citet{schwerdtfeger_voynich_2004}.\footnote{\citet{schwerdtfeger_voynich_2004} builds on an online archive of Voynich transcriptions that was maintained by Jorge \citet{stolfi_voynich_1998}. For a general overview of transcription efforts, see \citet{zandbergen_text_2023}.}
 It is then converted back into glyphs using a font by \citet{bettencourt_voynich_2019}.
 
 Using the manuscript's reproduction in \citet{clemens_voynich_2016}, Takahashi's transliteration is compared with what I am able to make out of the manuscript.
@@ -36,6 +38,8 @@ Especially the recognition of spaces is sometimes very difficult; therefore, my 
 Each line of the transcription is preceded by a locator in square brackets, informing the reader about the element a line is part of (i.e., title, paragraph, or label) and assigning the line a number.
 For example, a line located at [P2, 9] is part of the page's second paragraph and is the overall ninth line on this page.
 
+For better orientation, a thumbnail of the respective manuscript page is shown in the upper right corner of each transliteration page (scans are taken from ).
+
 
 \clearpage
 \section{Transcription}
@@ -45,6 +49,11 @@ For example, a line located at [P2, 9] is part of the page's second paragraph an
 % 1R %
 %%%%%%
 \subsection{Folio 1, Recto}
+\begin{wrapfigure}{r}{0.25\textwidth}
+   \centering
+   \includegraphics[width=0.25\textwidth]{f1r.jpg}
+\end{wrapfigure}
+
 \begin{locator}[P1, 1]\end{locator} {\eva fachys ykal ar ataiin Shol Shory cThres y kor Sholdy}\\
 \begin{locator}[P1, 2]\end{locator} {\eva sory cKhar or y kair chtaiin Shar are cThar cThar dan}\\
 \begin{locator}[P1, 3]\end{locator} {\eva syaiir Sheky or ykaiin Shod cThoary cThes daraiin s\textcolor{orange}{y}}\\
@@ -86,6 +95,11 @@ For example, a line located at [P2, 9] is part of the page's second paragraph an
 %%%%%%
 \clearpage
 \subsection{Folio 1, Verso}
+\begin{wrapfigure}{r}{0.25\textwidth}
+   \centering
+   \includegraphics[width=0.25\textwidth]{f1v.jpg}
+\end{wrapfigure}
+
 \begin{locator}[P1, 1]\end{locator} {\eva kchsy chadaiin ol oltchey char cFhar am}\\
 \begin{locator}[P1, 2]\end{locator} {\eva ytee\textcolor{orange}{y} char or ochy dcho lkody okodar chody}\\
 \begin{locator}[P1, 3]\end{locator} {\eva do cKhy cKho cKhy Shy dkSheey cThy kotchody dal}\\
@@ -105,6 +119,11 @@ For example, a line located at [P2, 9] is part of the page's second paragraph an
 %%%%%%
 \clearpage
 \subsection{Folio 2, Recto}
+\begin{wrapfigure}{r}{0.25\textwidth}
+   \centering
+   \includegraphics[width=0.25\textwidth]{f2r.jpg}
+\end{wrapfigure}
+
 \begin{locator}[P1, 1]\end{locator} {\eva kydainy ypchol daiin otchal ypchaiin cKholsy}\\
 \begin{locator}[P1, 2]\end{locator} {\eva dorchory chkar s Shor cThy cTh}\\
 \begin{locator}[P1, 3]\end{locator} {\eva qotaiin cThey y chor chy ydy chaiin}\\
