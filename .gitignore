@@ -30,3 +30,6 @@
 *.synctex.gz
 *.synctex.gz(busy)
 *.pdfsync
+
+# Python
+*.ipynb_checkpoints*
