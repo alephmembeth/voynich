@@ -25,6 +25,7 @@
 \begin{document}
 \maketitle
 
+
 %%%%%%%%%%%%%%%%
 % INTRODUCTION %
 %%%%%%%%%%%%%%%%
@@ -50,9 +51,10 @@ For example, a line located at [P2, 9] is part of the page's second paragraph (P
 \clearpage
 \section{Analysis}\label{sec:analysis}
 \subsection{Glyph Frequencies}
-Based on a transliteration by Takahashi (see Section \ref{sec:introduction}), a first basic analysis of glyph frequencies can be performed.
+Based on a transliteration by Takahashi (see Section \ref{sec:introduction}), a first basic analysis of glyph frequencies can be performed, counting each letter of the transliteration.
 
 \begin{table}[ht]
+\center
 \begin{tabular}{lr}
    \hline
    Glyph      & Count    \\
@@ -88,6 +90,45 @@ Based on a transliteration by Takahashi (see Section \ref{sec:introduction}), a 
    \hline
 \end{tabular}
 \end{table}
+
+It seems straightforward, though, to assume that {\eva c} and {\eva h} are meant to be one glyph, i.e. {\eva ch}.
+Likewise, {\eva S} and {\eva h} could be interpreted as another glyph, i.e. {\eva Sh}.
+Additionally, one \textit{might} interpret instances of {\eva cTh}, {\eva cKh}, {\eva cPh}, or {\eva cFh} as representing {\eva ch}, on the one hand, and {\eva t}, {\eva k}, {\eva p}, or {\eva f}, on the other.
+The two appearances of {\eva z} might also be interpreted as instances of {\eva k}.
+This would result in a slightly modified count, as shown in...
+
+\begin{table}[ht]
+\center
+\begin{tabular}{lr}
+   \hline
+   Glyph      & Count    \\
+   \hline\hline
+   {\eva o}   &          \\
+   {\eva e}   &          \\
+   {\eva y}   &          \\
+   {\eva a}   &          \\
+   {\eva ch}  &          \\
+   {\eva d}   &          \\
+   {\eva i}   &          \\
+   {\eva l}   &          \\
+   {\eva k}   &          \\
+   {\eva r}   &          \\
+   {\eva n}   &          \\
+   {\eva t}   &          \\
+   {\eva q}   &          \\
+   {\eva Sh}  &          \\
+   {\eva s}   &          \\
+   {\eva p}   &          \\
+   {\eva m}   &          \\
+   {\eva f}   &          \\
+   {\eva g}   &          \\
+   {\eva I}   &          \\
+   {\eva x}   &          \\
+   {\eva v}   &          \\
+   \hline
+\end{tabular}
+\end{table}
+
 
 %%%%%%%%%%%%%%%%%
 % TRANSCRIPTION %
@@ -710,7 +751,6 @@ Folio 12 is missing from the manuscript.
 %%%%%%%
 \clearpage
 \subsection*{Folio 16, Recto}
-
 \begin{locator}[P1, 1]\end{locator} {\eva pocheody qopchey sykaiin opchy dor ychy daiin dy chor orom}\\
 \begin{locator}[P1, 2]\end{locator} {\eva ychykchy otly kol Shor ody otody qoy oeesordy}\\
 \begin{locator}[P1, 3]\end{locator} {\eva ydor Sheal okchy qoy koiin choky ykair}\\
@@ -728,6 +768,29 @@ Folio 12 is missing from the manuscript.
 \begin{locator}[P3, 11]\end{locator} {\eva sokchy qokol choty\textcolor{orange}{$\smile$}okchy cThy chy kchy}\\
 \begin{locator}[P3, 12]\end{locator} {\eva dychokchy ShcThy ShtShy Sho tchokyd}\\
 \begin{locator}[P3, 13]\end{locator} {\eva qokchor dl dy Shey}\\
+
+
+
+%%%%%%%
+% 16V %
+%%%%%%%
+\clearpage
+\subsection*{Folio 16, Verso}
+\begin{locator}[P1, 1]\end{locator} {\eva pchraiin otchor chpchol chpchey s pchocty}\\
+\begin{locator}[P1, 2]\end{locator} {\eva ytchor y ky chokchy qokchocThor Shory}\\
+\begin{locator}[P1, 3]\end{locator} {\eva ykchy dy choy qoty chy kchy koShet}\\
+\begin{locator}[P1, 4]\end{locator} {\eva dchol chcThody cPhod chotol dal}\\
+\begin{locator}[P1, 5]\end{locator} {\eva ytchy chyty chor chol ytchy dan}\\
+\begin{locator}[P1, 6]\end{locator} {\eva sor chk\textcolor{orange}{o}r oty chk\textcolor{orange}{o}r chol dairin}\\
+
+\vspace{1em}
+\noindent\begin{locator}[P2, 7]\end{locator} {\eva pchocThy chypchy qotchy chcFhhy sy}\\
+\begin{locator}[P2, 8]\end{locator} {\eva daiin chol y daiin chcThy qotchar chor Sholo}\\
+\begin{locator}[P2, 9]\end{locator} {\eva dShy okaiin okaiin chol chor cThor ty chody}\\
+\begin{locator}[P2, 10]\end{locator} {\eva qokchy chydy ykchy chcKhy otain cThor cThy}\\
+\begin{locator}[P2, 11]\end{locator} {\eva okytaiin chkchy saiin}\\
+\begin{locator}[P2, 12]\end{locator} {\eva daiin yky otor chody}\\
+\begin{locator}[P2, 13]\end{locator} {\eva sokar oaorar}\\
 
 
 %%%%%%%%%%%%%%
