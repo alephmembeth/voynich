@@ -7,8 +7,6 @@
 \usepackage[natbib,authordate,backend=bibtex]{biblatex-chicago}
    \bibliography{references}
 \usepackage[a4paper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
-\usepackage{wrapfig,graphicx}
-   \graphicspath{ {./figures/} }
 \usepackage{fontspec}
    \newfontfamily\eva{fairfax_eva_hd.ttf}
 \usepackage{xcolor}
@@ -16,7 +14,7 @@
 \newenvironment{locator}{\tiny\sffamily}
 
 \deffootnote{1.5em}{1em}{\makebox[1.5em][l]{\thefootnotemark}}
-   \setlength{\skip\footins}{1.5em} 
+   \setlength{\skip\footins}{1.5em}
    \setlength{\footnotesep}{1em}
 
 \title{Beinecke MS 408}
@@ -30,6 +28,8 @@
 % INTRODUCTION %
 %%%%%%%%%%%%%%%%
 \section{Introduction}\label{sec:introduction}
+In Section \ref{sec:analysis}, a frequency analysis of glyphs is presented.
+
 In Section \ref{sec:transcription}, mainly to promote easier readability and comparability, a transcription of the manuscript is provided, based on a transliteration by \citet{takahashi_voynich_2004}.
 Takahashi's transliteration is obtained in an automatically capitalized version of the \textit{European} or \textit{Extensible Voynich Alphabet} (EVA), using the \textit{Interlinear Transcription Archive Extractor} by \citet{schwerdtfeger_voynich_2004}.\footnote{\citet{schwerdtfeger_voynich_2004} builds on an online archive of Voynich transcriptions that was maintained by Jorge \citet{stolfi_voynich_1998}. For a general overview of transcription efforts, see \citet{zandbergen_text_2023}.}
 It is then converted back into glyphs using a font by \citet{bettencourt_voynich_2019}.
@@ -51,8 +51,8 @@ For example, a line located at [P2, 9] is part of the page's second paragraph (P
 \clearpage
 \section{Analysis}\label{sec:analysis}
 \subsection{Glyph Frequencies}
-Based on a transliteration by Takahashi (see Section \ref{sec:introduction}), a first basic analysis of glyph frequencies can be performed, simply counting each latin letter of the transliteration.
-This results in Table \ref{tab:count_translit}.
+Based on a transliteration by Takahashi (see Section \ref{sec:introduction}), a first basic analysis of frequencies can be performed, simply counting each latin letter of the transliteration.
+This results in Table \ref{tab:count_translit}, listing all letters that are used.
 
 \begin{table}[ht]
 \center
@@ -95,10 +95,13 @@ This results in Table \ref{tab:count_translit}.
 \end{table}
 
 Determining what counts as \textit{one} glyph, though, is in some cases an interpretative act.
-It seems straightforward, to assume that {\eva c} and {\eva h} are one glyph, i.e. {\eva ch}.
-Likewise, {\eva S} and {\eva h} could be interpreted as another glyph, i.e. {\eva Sh}.
+It seems straightforward to assume that {\eva c} and {\eva h} are one glyph (i.e., {\eva ch}).
+Likewise, {\eva S} and {\eva h} could be interpreted as another glyph (i.e., {\eva Sh}).
 Additionally, one \textit{might} interpret instances of {\eva cTh}, {\eva cKh}, {\eva cPh}, or {\eva cFh} as representing {\eva ch} (or {\eva Sh}), on the one hand, and {\eva t}, {\eva k}, {\eva p}, or {\eva f}, on the other.
-Table \ref{tab:count_c} gives frequencies for those {\eva c} combinations.
+Concerning those ``gallows'' characters, as they have come to be called, it is not clear whether {\eva t} and {\eva k} or {\eva p} and {\eva f} are variations of the same glyphs, only diverging in one small loop (as \cite{tiltman_voynich_1967} interpreted them).
+In the following, the four gallows will be treated as distinct glyphs, as has become customary.
+Accordingly, Table \ref{tab:count_c} gives frequencies for the {\eva c} combinations, taking into account the four forms of ``pedestalled gallows''.
+The table also includes three instances that bear some resemblance to Latin abbreviations (also see \cite[p. 95]{dimperio_voynich_1978}).
 
 \begin{table}[ht]
 \center
@@ -112,6 +115,7 @@ Table \ref{tab:count_c} gives frequencies for those {\eva c} combinations.
    {\eva cKh}   &    906   \\
    {\eva cPh}   &    216   \\
    {\eva cFh}   &     74   \\
+   {\eva c}     &    143   \\
    {\eva co}    &      9   \\
    {\eva cy}    &      7   \\
    \hline
@@ -127,19 +131,55 @@ Table \ref{tab:count_i} gives frequencies for those {\eva i} combinations.
 \center
 \begin{tabular}{lr}
    \hline
-   Glyph        & Count   \\
+   Glyph          & Count   \\
    \hline\hline
-   {\eva i}     &         \\
-   {\eva ii}    &         \\
-   {\eva iii}   &         \\
-   {\eva in}    &         \\
-   {\eva iin}   &         \\
+   {\eva i}       & 1,018   \\
+   {\eva ii}      &   246   \\
+   {\eva iii}     &    10   \\
+   {\eva n}       &   148   \\
+   {\eva in}      & 5,984   \\
+   {\eva iin}     & 4,232   \\
+   {\eva iiin}    &   156   \\
+   {\eva iiiin}   &     2   \\
    \hline
 \end{tabular}
 \caption{Glyph frequencies in Takahashi's transliteration for {\eva i} combinations.}
 \label{tab:count_i}
 \end{table}
 
+This said, I tentatively stipulate a set of 20 glyphs that are most common (i.e., appear more than 1,000 times) in the manuscript...
+
+\begin{table}[ht]
+\center
+\begin{tabular}{lr}
+   \hline
+   Glyph        & Count   \\
+   \hline\hline
+   {\eva o}     &   \\
+   {\eva e}     &   \\
+   {\eva ch}    &   \\
+   {\eva Sh}    &   \\
+   {\eva y}     &   \\
+   {\eva a}     &   \\
+   {\eva d}     &   \\
+   {\eva i}     &   \\
+   {\eva in}    &   \\
+   {\eva iin}   &   \\
+   {\eva l}     &   \\
+   {\eva k}     &   \\
+   {\eva r}     &   \\
+   {\eva t}     &   \\
+   {\eva q}     &   \\
+   {\eva s}     &   \\
+   {\eva p}     &   \\
+   {\eva m}     &   \\
+   {\eva f}     &   \\
+   {\eva g}     &   \\
+   \hline
+\end{tabular}
+\caption{Glyph frequencies in Takahashi's transliteration for the 20 most common glyphs}
+\label{tab:count_glyph}
+\end{table}
 
 
 %%%%%%%%%%%%%%%%%
