@@ -29,21 +29,21 @@
 % INTRODUCTION %
 %%%%%%%%%%%%%%%%
 \section{Introduction}\label{sec:introduction}
-In Section \ref{sec:analysis}, a frequency analysis of glyphs is presented.
+In Section \ref{sec:analysis}, some basic analyses are presented. First, in Section \ref{sec:frequency}, glyph frequencies are counted. In Section \ref{sec:entropy}, then, entropy is calculated.
 
 In Section \ref{sec:transcription}, mainly to promote easier readability and comparability, a transcription of the manuscript is provided, based on a transliteration by \citet{takahashi_voynich_2004}.
-Takahashi's transliteration is obtained in an automatically capitalized version of the \textit{European} or \textit{Extensible Voynich Alphabet} (EVA), using the \textit{Interlinear Transcription Archive Extractor} by \citet{schwerdtfeger_voynich_2004}.\footnote{\citet{schwerdtfeger_voynich_2004} builds on an online archive of Voynich transcriptions that was maintained by Jorge \citet{stolfi_voynich_1998}. For a general overview of transcription efforts, see \citet{zandbergen_text_2023}.}
+Takahashi's transliteration is obtained in an automatically capitalized version of the \textit{European} or \textit{Extensible Voynich Alphabet} (EVA) using the \textit{Interlinear Transcription Archive Extractor} by \citet{schwerdtfeger_voynich_2004}.\footnote{\citet{schwerdtfeger_voynich_2004} builds on an online archive of Voynich transcriptions maintained by Jorge \citet{stolfi_voynich_1998}. For a general overview of transcription efforts, see \citet{zandbergen_text_2023}.}
 It is then converted back into glyphs using a font by \citet{bettencourt_voynich_2019}.
 
 Using the manuscript's reproduction in \citet{clemens_voynich_2016} and the scans provided by  Yale University's \citet{beinecke_voynich_2004}, Takahashi's transliteration is compared with what I am able to make out of the manuscript.
 Glyphs that I interpret in another way than Takahashi are printed in \textcolor{orange}{orange}, showing my interpretation.
 When a glyph has been deleted \textit{without replacement}, this is indicated by \textcolor{orange}{$\cancel{x}$}.
 Removed spaces are marked with \textcolor{orange}{$\frown$} and added spaces are indicated by \textcolor{orange}{$\smile$}.
-For sake of simplicity, places, where the writing is interrupted by illustrations, are also marked by spaces.
+For the sake of simplicity, places where the writing is interrupted by illustrations are also marked by spaces.
 Especially the recognition of spaces in running text is sometimes very difficult; therefore, my adjustments in this -- just as in any other -- regard should be taken with a certain amount of caution.
 In total, I made changes in 131 places of Takahashi's transliteration.
 
-Each line of the transcription is preceded by a locator in square brackets, informing the reader about the element a line is part of (i.e., paragraph, title, or label) and assigning the line a number.
+Each transcription line is preceded by a locator in square brackets, informing the reader about the element a line is part of (i.e., paragraph, title, or label) and assigning the line a number.
 For example, a line located at [P2, 9] is part of the page's second paragraph (P2) and is counted as the overall ninth line (9) on this page.
 
 
@@ -52,8 +52,13 @@ For example, a line located at [P2, 9] is part of the page's second paragraph (P
 %%%%%%%%%%%%
 \clearpage
 \section{Analysis}\label{sec:analysis}
-\subsection{Glyph Frequencies}
-Based on a transliteration by Takahashi (see Section \ref{sec:introduction}), a first basic analysis of frequencies can be performed, simply counting each latin letter of the transliteration.
+
+
+%%%%%%%%%%%%%
+% FREQUENCY %
+%%%%%%%%%%%%%
+\subsection{Glyph Frequencies}\label{sec:frequency}
+Based on a transliteration by Takahashi (see Section \ref{sec:introduction}), a first basic analysis of frequencies can be performed, by simply counting each Latin letter of the transliteration.
 This results in Table \ref{tab:count_translit}, listing all letters that are used.
 
 \begin{table}[ht]
@@ -100,7 +105,7 @@ Determining what counts as \textit{one} glyph, though, is in some cases an inter
 It seems straightforward to assume that {\eva c} and {\eva h} are one glyph (i.e., {\eva ch}).
 Likewise, {\eva S} and {\eva h} could be interpreted as another glyph (i.e., {\eva Sh}).
 Additionally, one \textit{might} interpret instances of {\eva cTh}, {\eva cKh}, {\eva cPh}, or {\eva cFh} as representing {\eva ch} (or {\eva Sh}), on the one hand, and {\eva t}, {\eva k}, {\eva p}, or {\eva f}, on the other.
-Concerning those ``gallows'' characters, as they have come to be called, it is not clear whether {\eva t} and {\eva k} or {\eva p} and {\eva f} are variations of the same glyphs, only diverging in one small loop (as \cite{tiltman_voynich_1967} interpreted them).
+Concerning those ``gallows'' characters, as they have come to be called, it is not clear whether {\eva t} and {\eva k} or {\eva p} and {\eva f} are variations of the same glyphs, only diverging in one small loop (as \cite{tiltman_voynich_1967} seems to have interpreted them).
 In the following, the four gallows will be treated as distinct glyphs, as has become customary.
 Accordingly, Table \ref{tab:count_c} gives frequencies for several {\eva c} combinations, taking into account four forms of ``pedestalled gallows''.
 The table also includes three instances that bear some resemblance to Latin abbreviations (also see \cite[p. 95]{dimperio_voynich_1978}).
@@ -203,6 +208,17 @@ They are counted as follows:
 \caption{Glyph frequencies in Takahashi's transliteration}
 \label{tab:count_glyph}
 \end{table}
+
+
+%%%%%%%%%%%
+% ENTROPY %
+%%%%%%%%%%%
+\subsection{Entropy}\label{sec:entropy}
+Next, we take a look at the manuscript's entropy.
+
+\begin{equation}
+   H(X)=-\sum_{i=1}^{n} P\left(x_{i}\right) \log P\left(x_{i}\right)
+\end{equation}
 
 
 %%%%%%%%%%%%%%%%%
@@ -547,21 +563,21 @@ They are counted as follows:
 \begin{locator}[T1, 8]\end{locator} {\eva \textcolor{orange}{d}cho daiin}\\
 
 \vspace{1em}
-\noindent\begin{locator}[P2, 1]\end{locator} {\eva tchoep Sho pcheey pchey ofchey dSheey Shol\textcolor{orange}{$\frown$}daiin Shor}\\
-\begin{locator}[P2, 9]\end{locator} {\eva daiin cheey teeodan dy cheocThy okSheo dol dair\textcolor{orange}{g}}\\
-\begin{locator}[P2, 10]\end{locator} {\eva Shol cheodaiin daiin do ytchody chot choty otariin}\\
-\begin{locator}[P2, 11]\end{locator} {\eva qochodaiin Shotokody chotol}\\
-\begin{locator}[T2, 12]\end{locator} {\eva okokchod\textcolor{orange}{g}}\\
+\noindent\begin{locator}[P2, 9]\end{locator} {\eva tchoep Sho pcheey pchey ofchey dSheey Shol\textcolor{orange}{$\frown$}daiin Shor}\\
+\begin{locator}[P2, 10]\end{locator} {\eva daiin cheey teeodan dy cheocThy okSheo dol dair\textcolor{orange}{g}}\\
+\begin{locator}[P2, 11]\end{locator} {\eva Shol cheodaiin daiin do ytchody chot choty otariin}\\
+\begin{locator}[P2, 12]\end{locator} {\eva qochodaiin Shotokody chotol}\\
+\begin{locator}[T2, 13]\end{locator} {\eva okokchod\textcolor{orange}{g}}\\
 
 \vspace{1em}
-\noindent\begin{locator}[P3, 13]\end{locator} {\eva cTho cThey Shol chofydy Sho chey kShey lody cholal}\\
-\begin{locator}[P3, 14]\end{locator} {\eva dchey cKhol chol chey kchs chy \textcolor{orange}{cT}odaiin dol daiiirchy cKhy}\\
-\begin{locator}[P3, 15]\end{locator} {\eva ychey kchokchy chsey kchy scheaiin cThaichar cThy dar}\\
-\begin{locator}[P3, 16]\end{locator} {\eva chol dchy qokar chl aiin chean c\textcolor{orange}{K}y char chaiin}\\
-\begin{locator}[P3, 17]\end{locator} {\eva okar cPhaiin chaiin el daiin chor cha rchealcham}\\
-\begin{locator}[P3, 18]\end{locator} {\eva sair cheain cPhol dar Shol kaiin Shol kaiin daikam}\\
-\begin{locator}[P3, 19]\end{locator} {\eva or chokesey Shey okal chal}\\
-\begin{locator}[T3, 20]\end{locator} {\eva schol sair}\\
+\noindent\begin{locator}[P3, 14]\end{locator} {\eva cTho cThey Shol chofydy Sho chey kShey lody cholal}\\
+\begin{locator}[P3, 15]\end{locator} {\eva dchey cKhol chol chey kchs chy \textcolor{orange}{cT}odaiin dol daiiirchy cKhy}\\
+\begin{locator}[P3, 16]\end{locator} {\eva ychey kchokchy chsey kchy scheaiin cThaichar cThy dar}\\
+\begin{locator}[P3, 17]\end{locator} {\eva chol dchy qokar chl aiin chean c\textcolor{orange}{K}y char chaiin}\\
+\begin{locator}[P3, 18]\end{locator} {\eva okar cPhaiin chaiin el daiin chor cha rchealcham}\\
+\begin{locator}[P3, 19]\end{locator} {\eva sair cheain cPhol dar Shol kaiin Shol kaiin daikam}\\
+\begin{locator}[P3, 20]\end{locator} {\eva or chokesey Shey okal chal}\\
+\begin{locator}[T3, 21]\end{locator} {\eva schol sair}\\
 
 
 %%%%%%
@@ -1076,13 +1092,13 @@ Folio 12 is missing from the manuscript.
 \clearpage
 \subsection*{Folio 21, Verso}
 \begin{locator}[P1, 1]\end{locator} {\eva toldShy chofchy qofShey ShcKhol odaiin Shey cKholy}\\
-\begin{locator}[P1, 1]\end{locator} {\eva oeeesoy qokchy chody qotchy qokchy choty tchol daiin}\\
-\begin{locator}[P1, 1]\end{locator} {\eva qotol keeees chotchy tcho choty chor qotol daiin dal}\\
-\begin{locator}[P1, 1]\end{locator} {\eva Sho chodaiin choty chol daiin daiin chty chtol}\\
-\begin{locator}[P1, 1]\end{locator} {\eva oSho deey cTho l Sho cThy daiin dait oky}\\
-\begin{locator}[P1, 1]\end{locator} {\eva Sho tSho chotShol chol todaiin daiin}\\
-\begin{locator}[P1, 1]\end{locator} {\eva ykcho lchol cholchaiin otchy s Sheaiin}\\
-\begin{locator}[P1, 1]\end{locator} {\eva cho l kchochaiin}\\
+\begin{locator}[P1, 2]\end{locator} {\eva oeeesoy qokchy chody qotchy qokchy choty tchol daiin}\\
+\begin{locator}[P1, 3]\end{locator} {\eva qotol keeees chotchy tcho choty chor qotol daiin dal}\\
+\begin{locator}[P1, 4]\end{locator} {\eva Sho chodaiin choty chol daiin daiin chty chtol}\\
+\begin{locator}[P1, 5]\end{locator} {\eva oSho deey cTho l Sho cThy daiin dait oky}\\
+\begin{locator}[P1, 6]\end{locator} {\eva Sho tSho chotShol chol todaiin daiin}\\
+\begin{locator}[P1, 7]\end{locator} {\eva ykcho lchol cholchaiin otchy s Sheaiin}\\
+\begin{locator}[P1, 8]\end{locator} {\eva cho l kchochaiin}\\
 
 
 %%%%%%%
@@ -1134,6 +1150,49 @@ Folio 12 is missing from the manuscript.
 \begin{locator}[P2, 14]\end{locator} {\eva qotchy olShly Shol daiin}\\
 \begin{locator}[P2, 15]\end{locator} {\eva Sho cThy chocThy qokchy dory}\\
 \begin{locator}[T1, 16]\end{locator} {\eva saiinchy daldalol}\\
+
+
+%%%%%%%
+% 23R %
+%%%%%%%
+\clearpage
+\subsection*{Folio 23, Recto}
+\begin{locator}[P1, 1]\end{locator} {\eva pydchdom chy fcholdy oty otchol Shy opy\textcolor{orange}{o}iin y yfchy daiin ololdy dal}\\
+\begin{locator}[P1, 2]\end{locator} {\eva to ar chor daiin chkdain otchy lolchor daiin dam okchol daing}\\
+\begin{locator}[P1, 3]\end{locator} {\eva dchar ykor ykaiin daiin cTho g}\\
+
+\vspace{1em}
+\noindent\begin{locator}[P2, 4]\end{locator} {\eva qokoldy okaiir ykaiil g qokeey ofchol dain yfchor olfchor otchald}\\
+\begin{locator}[P2, 5]\end{locator} {\eva ychor qokchol ytom chol dair chol ar ol ol dol dain}\\
+
+\vspace{1em}
+\noindent\begin{locator}[P3, 6]\end{locator} {\eva tShol ykor qokaiin yky dar okol dchey daiidal dam ytcho ldals}\\
+\begin{locator}[P3, 7]\end{locator} {\eva okar olchar Shaiin qokchol dar qokchol dairo r ol daiin alg}\\
+\begin{locator}[P3, 8]\end{locator} {\eva qokShy char daiir qokaiin olol qoaiin ykchy s diil okchy}\\
+\begin{locator}[P3, 9]\end{locator} {\eva okol ok Shy qokol dy d\textcolor{orange}{o}l dShe qokeees y oly daiin dal}\\
+\begin{locator}[P3, 10]\end{locator} {\eva qok okaiin chkchy s yteair odal chal dy dar ykain}\\
+\begin{locator}[P3, 11]\end{locator} {\eva ykyk\textcolor{orange}{o} dalory}\\
+
+
+%%%%%%%
+% 23V %
+%%%%%%%
+\clearpage
+\subsection*{Folio 23, Verso}
+\begin{locator}[P1, 1]\end{locator} {\eva podairol odaiiily Shoaldy opchol otol ol chcPhy qotchar s}\\
+\begin{locator}[P1, 2]\end{locator} {\eva qot\textcolor{orange}{c}otor chy okcha\textcolor{orange}{l}dy qokchey dol otchol chal otch\textcolor{orange}{g}}\\
+\begin{locator}[P1, 3]\end{locator} {\eva ycho okaiin okeol eees oldaiin okeeor daiin qotchol\textcolor{orange}{g}}\\
+\begin{locator}[P1, 4]\end{locator} {\eva okchey dair Sholol oldal otchor \textcolor{orange}{d}ar}\\
+\begin{locator}[P1, 5]\end{locator} {\eva dor chear Shor dol oaldary}\\
+
+\vspace{1em}
+\noindent\begin{locator}[P2, 6]\end{locator} {\eva tShol Shor ShkShy okol daiin otShor olsar}\\
+\begin{locator}[P2, 7]\end{locator} {\eva otor oiin Sho Shol qokol daiin sol daiin ylg}\\
+\begin{locator}[P2, 8]\end{locator} {\eva qokaiin dain qokor okal g dam chor olol dam}\\
+\begin{locator}[P2, 9]\end{locator} {\eva otShy dal dar oldar ar or qoto l chees g}\\
+\begin{locator}[P2, 10]\end{locator} {\eva dor chy kShol chol cThol otol oloiir}\\
+\begin{locator}[P2, 11]\end{locator} {\eva y okaiin doroiin olols oiin ol cheen ols}\\
+\begin{locator}[P2, 12]\end{locator} {\eva olaiior oloro eeeoly}\\
 
 
 %%%%%%%%%%%%%%
