@@ -41,7 +41,7 @@ When a glyph has been deleted \textit{without replacement}, this is indicated by
 Removed spaces are marked with \textcolor{orange}{$\frown$} and added spaces are indicated by \textcolor{orange}{$\smile$}.
 For the sake of simplicity, places where the writing is interrupted by illustrations are also marked by spaces.
 Especially the recognition of spaces in running text is sometimes very difficult; therefore, my adjustments in this -- just as in any other -- regard should be taken with a certain amount of caution.
-In total, I made changes in 131 places of Takahashi's transliteration.
+In total, I made changes in 148 places of Takahashi's transliteration.
 
 Each transcription line is preceded by a locator in square brackets, informing the reader about the element a line is part of (i.e., paragraph, title, or label) and assigning the line a number.
 For example, a line located at [P2, 9] is part of the page's second paragraph (P2) and is counted as the overall ninth line (9) on this page.
@@ -155,7 +155,7 @@ Assuming there are three glyphs {\eva i}, {\eva in}, and {\eva iin}, it is of co
 \label{tab:count_i}
 \end{table}
 
-This being said, I tentatively stipulate a set of 23 glyphs.
+This being said, I tentatively stipulate a set of 22 glyphs.
 Table \ref{tab:count_glyph} gives frequencies for those glyphs.
 They are counted as follows:
 
@@ -169,7 +169,7 @@ They are counted as follows:
    \item The glyph {\eva f} is counted every time {\eva f} or {\eva F} appears.
    \item The glyph {\eva in} is counted every time {\eva i} and {\eva n} appear consecutively without there being a preceding second {\eva i}.
    \item The glyph {\eva iin} is counted every time {\eva i}, {\eva i}, and {\eva n} appear consecutively.
-   \item The glyph {\eva i} is counted every time it is not part of {\eva in} or {\eva iin}.
+   \item The glyph {\eva i} is counted every time it is not part of {\eva in} or {\eva iin} as well as in instances of {\eva I}.
 \end{itemize}
 
 \begin{table}[ht]
@@ -194,11 +194,10 @@ They are counted as follows:
    {\eva s}     &   2,886   &  1.772    \\
    {\eva in}    &   1,752   &  1.076    \\
    {\eva p}     &   1,630   &  1.001    \\
-   {\eva i}     &   1,168   &  0.717    \\
+   {\eva i}     &   1,240   &  0.761    \\
    {\eva m}     &   1,116   &  0.685    \\
    {\eva f}     &     505   &  0.310    \\
    {\eva g}     &     96    &  0.059    \\
-   {\eva I}     &     72    &  0.044    \\
    {\eva x}     &     35    &  0.021    \\
    {\eva v}     &      9    & <0.001    \\
    \hline
@@ -215,8 +214,10 @@ They are counted as follows:
 %%%%%%%%%%%
 \subsection{Entropy}\label{sec:entropy}
 Next, we take a look at the manuscript's entropy.
+To this end, we utilize the conceptualization of entropy by \citet{shannon_mathematical_1948}.
+As shown in (\ref{eq:shannon}), the entropy \textit{H} of a 
 
-\begin{equation}
+\begin{equation}\label{eq:shannon}
    H(X)=-\sum_{i=1}^{n} P\left(x_{i}\right) \log P\left(x_{i}\right)
 \end{equation}
 
@@ -1193,6 +1194,72 @@ Folio 12 is missing from the manuscript.
 \begin{locator}[P2, 10]\end{locator} {\eva dor chy kShol chol cThol otol oloiir}\\
 \begin{locator}[P2, 11]\end{locator} {\eva y okaiin doroiin olols oiin ol cheen ols}\\
 \begin{locator}[P2, 12]\end{locator} {\eva olaiior oloro eeeoly}\\
+
+
+%%%%%%%
+% 24R %
+%%%%%%%
+\clearpage
+\subsection*{Folio 24, Recto}
+\begin{locator}[P1, 1]\end{locator} {\eva porory chor opchar She cheol daiin or}\\
+\begin{locator}[P1, 2]\end{locator} {\eva qotaiin char odain okaiIKhal oky}\\
+\begin{locator}[P1, 3]\end{locator} {\eva y cThar cThal okol qotar cKhy}\\
+\begin{locator}[P1, 4]\end{locator} {\eva or chcKhaly cThar eeor chees da}\\
+\begin{locator}[P1, 5]\end{locator} {\eva qdar cho r chey cThy cTh\textcolor{orange}{e$\smile$}keom}\\
+\begin{locator}[P1, 6]\end{locator} {\eva oeeeos eteor otal qocThol qoky}\\
+\begin{locator}[P1, 7]\end{locator} {\eva q\textcolor{orange}{*}kar chtar s cheor cThol qodol}\\
+\begin{locator}[P1, 8]\end{locator} {\eva ychor s om qoear daiin qokeol}\\
+\begin{locator}[P1, 9]\end{locator} {\eva odaiin cKham qodai\textcolor{orange}{IK}hy dol dal}\\
+\begin{locator}[P1, 10]\end{locator} {\eva q*or cFhar chor s am chotaiin dy}\\
+\begin{locator}[P1, 11]\end{locator} {\eva sar cheoiees okeer cheor qokain}\\
+\begin{locator}[P1, 12]\end{locator} {\eva qokchy qotchy tol tod cKhy}\\
+\begin{locator}[P1, 13]\end{locator} {\eva oees ol s chey chcTh sar}\\
+\begin{locator}[P1, 14]\end{locator} {\eva qor cheey qod char cThal}\\
+\begin{locator}[P1, 15]\end{locator} {\eva ocKhoees oeees ol dal s}\\
+\begin{locator}[P1, 16]\end{locator} {\eva Sham okeal dal dam dal}\\
+\begin{locator}[P1, 17]\end{locator} {\eva sShey otam Sham cThom oky}\\
+\begin{locator}[P1, 18]\end{locator} {\eva y cheol chol daiin chol s}\\
+\begin{locator}[P1, 19]\end{locator} {\eva yol \textcolor{orange}{k}ol chol Shom otaIPhy}\\
+\begin{locator}[T1, 20]\end{locator} {\eva samchorly}\\
+
+
+%%%%%%%
+% 24V %
+%%%%%%%
+\clearpage
+\subsection*{Folio 24, Verso}
+\begin{locator}[P1, 1]\end{locator} {\eva tchodar chocFhh\textcolor{orange}{y} opom Shod chcPhy opShody ocPhoraiin okokom}\\
+\begin{locator}[P1, 2]\end{locator} {\eva ydals cKhor Shy cho dch\textcolor{orange}{o}r otol otaiir otchos okchom okcho}\\
+\begin{locator}[P1, 3]\end{locator} {\eva ocThol odchees oesearees okam chcTh}\\
+\begin{locator}[P1, 4]\end{locator} {\eva ydal Sh okol okaiin odaiin dlos}\\
+\begin{locator}[P1, 5]\end{locator} {\eva oeor or\textcolor{orange}{o}iin tchar oro}\\
+
+\vspace{1em}
+\noindent\begin{locator}[P2, 6]\end{locator} {\eva tochol chor cfarasr}\\
+\begin{locator}[P2, 7]\end{locator} {\eva ycheol daid dar olom}\\
+\begin{locator}[P2, 8]\end{locator} {\eva kochky chcThy Shol sain}\\
+\begin{locator}[P2, 9]\end{locator} {\eva ychol chol or chorom}\\
+\begin{locator}[P2, 10]\end{locator} {\eva okoeo\textcolor{orange}{r} cKheod choy keol}\\
+\begin{locator}[P2, 11]\end{locator} {\eva ydaiin cheor qodom okodaiin}\\
+\begin{locator}[P2, 12]\end{locator} {\eva kSho foar cto Sho qokch ok\textcolor{orange}{$\smile$}okchal}\\
+\begin{locator}[P2, 13]\end{locator} {\eva oeeey cheol chol odor Sho do otolodal}\\
+\begin{locator}[P2, 14]\end{locator} {\eva doiir chee\textcolor{orange}{o}dam Sho Sho dy}\\
+\begin{locator}[P2, 15]\end{locator} {\eva dchey kchod dchol ochdy}\\
+\begin{locator}[P2, 16]\end{locator} {\eva otchol odaiim}\\
+
+
+%%%%%%%
+% 25R %
+%%%%%%%
+\clearpage
+\subsection*{Folio 25, Recto}
+\begin{locator}[P1, 1]\end{locator} {\eva fcholdy soShy daiin cky Shody daiin ocholdy cPholdy sy}\\
+\begin{locator}[P1, 2]\end{locator} {\eva otor chor chrky chotchy Shair qod Sho chy kchy chkain}\\
+\begin{locator}[P1, 3]\end{locator} {\eva qotchy qotShy cheesees Sheear s chain daiin chain dein}\\
+\begin{locator}[P1, 4]\end{locator} {\eva dchcKhy ShocThy ytchey cThor s chan chaiin qotchain}\\
+\begin{locator}[P1, 5]\end{locator} {\eva qotcheaiin dchain cThain daiin daiin cThain qotaiin}\\
+\begin{locator}[P1, 6]\end{locator} {\eva okal chotaiin}\\
+\begin{locator}[T1, 7]\end{locator} {\eva dair otaiir otosy}\\
 
 
 %%%%%%%%%%%%%%
