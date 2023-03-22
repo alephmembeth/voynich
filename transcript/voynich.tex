@@ -19,6 +19,7 @@
    \setlength{\footnotesep}{1em}
 
 \title{Beinecke MS 408}
+\subtitle{A Transcription Based on a Revised Version\\of Takeshi Takahashi's Transliteration}
 \author{Alexander Max Bauer}
 \date{}
 
@@ -30,15 +31,13 @@
 % INTRODUCTION %
 %%%%%%%%%%%%%%%%
 \section{Introduction}\label{sec:introduction}
-In Section \ref{sec:analysis}, some basic analyses are presented. First, in Section \ref{sec:frequency}, glyph frequencies are counted. In Section \ref{sec:entropy}, then, entropy is calculated.
-
-In Section \ref{sec:transcription}, mainly to promote easier readability and comparability, a transcription of the manuscript is provided, based on a transliteration by \citet{takahashi_voynich_2004}.
-Takahashi's transliteration is obtained in an automatically capitalized version of the \textit{European} or \textit{Extensible Voynich Alphabet} (EVA) using the \textit{Interlinear Transcription Archive Extractor} by \citet{schwerdtfeger_voynich_2004}.\footnote{\citet{schwerdtfeger_voynich_2004} builds on an online archive of Voynich transcriptions maintained by Jorge \citet{stolfi_voynich_1998}. For a general overview of transcription efforts, see \citet{zandbergen_text_2023}.}
+In Section \ref{sec:transcription} of this document, mainly to promote easier readability and comparability, a transcription of \textit{Beinecke MS 408} is currently being developed, based on a transliteration by \citet{takahashi_voynich_2004}.
+To achieve this, Takahashi's transliteration is obtained in an automatically capitalized version of the \textit{European} or \textit{Extensible Voynich Alphabet} (EVA) using the \textit{Interlinear Transcription Archive Extractor} by \citet{schwerdtfeger_voynich_2004}.\footnote{\citet{schwerdtfeger_voynich_2004} builds on an online archive of Voynich transcriptions maintained by Jorge \citet{stolfi_voynich_1998}. For a general overview of transcription efforts, see \citet{zandbergen_text_2023}.}
 It is then converted back into glyphs using a font by \citet{bettencourt_voynich_2019}.
 
-Using the manuscript's reproduction in \citet{clemens_voynich_2016} and the scans provided by  Yale University's \citet{beinecke_voynich_2004}, Takahashi's transliteration is compared with what I am able to make out of the manuscript.
+Using the manuscript's reproduction in \citet{clemens_voynich_2016} and the scans provided by Yale University's \citet{beinecke_voynich_2004}, Takahashi's transliteration is compared with what I am able to make out of the manuscript.
 Glyphs that I interpret in another way than Takahashi are printed in \textcolor{orange}{orange}, showing my interpretation.
-When a glyph has been deleted \textit{without replacement}, this is indicated by \textcolor{orange}{$\cancel{x}$}.
+When a glyph has been deleted by me \textit{without replacement}, this is indicated by \textcolor{orange}{$\cancel{x}$}.
 Removed spaces are marked with \textcolor{orange}{$\frown$} and added spaces are indicated by \textcolor{orange}{$\smile$}.
 For the sake of simplicity, places where the writing is interrupted by illustrations are also marked by spaces.
 Especially the recognition of spaces in running text is sometimes very difficult; therefore, my adjustments in this -- just as in any other -- regard should be taken with a certain amount of caution.
@@ -47,180 +46,7 @@ In total, I made changes in 180 places of Takahashi's transliteration.
 Each transcription line is preceded by a locator in square brackets, informing the reader about the element a line is part of (i.e., paragraph, title, or label) and assigning the line a number.
 For example, a line located at [P2, 9] is part of the page's second paragraph (P2) and is counted as the overall ninth line (9) on this page.
 
-
-%%%%%%%%%%%%
-% ANALYSIS %
-%%%%%%%%%%%%
-\clearpage
-\section{Analysis}\label{sec:analysis}
-
-
-%%%%%%%%%%%%%
-% FREQUENCY %
-%%%%%%%%%%%%%
-\subsection{Glyph Frequencies}\label{sec:frequency}
-Based on a transliteration by Takahashi (see Section \ref{sec:introduction}), a first basic analysis of frequencies can be performed, by simply counting each Latin letter of the transliteration.
-This results in Table \ref{tab:count_translit}, listing all letters that are used.
-
-\begin{table}[ht]
-\center
-\begin{tabular}{lcr}
-   \hline
-   Letter   &   Glyph      & Count    \\
-   \hline\hline
-   o        &   {\eva o}   & 25,468   \\
-   e        &   {\eva e}   & 20,070   \\
-   h        &   {\eva h}   & 17,856   \\
-   y        &   {\eva y}   & 17,655   \\
-   a        &   {\eva a}   & 14,281   \\
-   c        &   {\eva c}   & 13,314   \\
-   d        &   {\eva d}   & 12,973   \\
-   i        &   {\eva i}   & 11,660   \\
-   l        &   {\eva l}   & 10,518   \\
-   k        &   {\eva k}   &  9,996   \\
-   r        &   {\eva r}   &  7,456   \\
-   n        &   {\eva n}   &  6,141   \\
-   t        &   {\eva t}   &  5,968   \\
-   q        &   {\eva q}   &  5,423   \\
-   S        &   {\eva S}   &  4,501   \\
-   s        &   {\eva s}   &  2,886   \\
-   p        &   {\eva p}   &  1,406   \\
-   m        &   {\eva m}   &  1,116   \\
-   T        &   {\eva T}   &    976   \\
-   K        &   {\eva K}   &    938   \\
-   f        &   {\eva f}   &    425   \\
-   P        &   {\eva P}   &    224   \\
-   g        &   {\eva g}   &     96   \\
-   F        &   {\eva F}   &     80   \\
-   I        &   {\eva I}   &     72   \\
-   x        &   {\eva x}   &     35   \\
-   v        &   {\eva v}   &      9   \\
-   z        &   {\eva z}   &      2   \\
-   \hline
-\end{tabular}
-\caption{Letter frequencies in Takahashi's transliteration.}
-\label{tab:count_translit}
-\end{table}
-
-Determining what counts as \textit{one} glyph, though, is in some cases an interpretative act.
-It seems straightforward to assume that {\eva c} and {\eva h} are one glyph (i.e., {\eva ch}).
-Likewise, {\eva S} and {\eva h} could be interpreted as another glyph (i.e., {\eva Sh}).
-Additionally, one \textit{might} interpret instances of {\eva cTh}, {\eva cKh}, {\eva cPh}, or {\eva cFh} as representing {\eva ch} (or {\eva Sh}), on the one hand, and {\eva t}, {\eva k}, {\eva p}, or {\eva f}, on the other.
-Concerning those ``gallows'' characters, as they have come to be called, it is not clear whether {\eva t} and {\eva k} or {\eva p} and {\eva f} are variations of the same glyphs, only diverging in one small loop (as \cite{tiltman_voynich_1967} seems to have interpreted them).
-In the following, the four gallows will be treated as distinct glyphs, as has become customary.
-Accordingly, Table \ref{tab:count_c} gives frequencies for several {\eva c} combinations, taking into account four forms of ``pedestalled gallows''.
-The table also includes three instances that bear some resemblance to Latin abbreviations (also see \cite[p. 95]{dimperio_voynich_1978}).
-
-\begin{table}[ht]
-\center
-\begin{tabular}{lr}
-   \hline
-   Glyph        & Count    \\
-   \hline\hline
-   {\eva ch}    & 11,008   \\
-   {\eva Sh}    &  4,501   \\
-   {\eva cTh}   &    950   \\
-   {\eva cKh}   &    906   \\
-   {\eva cPh}   &    216   \\
-   {\eva cFh}   &     74   \\
-   {\eva c}     &    143   \\
-   {\eva co}    &      9   \\
-   {\eva cy}    &      7   \\
-   \hline
-\end{tabular}
-\caption{Glyph frequencies in Takahashi's transliteration for several {\eva c} combinations.}
-\label{tab:count_c}
-\end{table}
-
-Furthermore, while there are instances of a single {\eva i}, it is not clear whether instances like {\eva ii} and {\eva iii} or combinations with {\eva n} like {\eva in} or {\eva iin} represent separate glyphs.
-Table \ref{tab:count_i} gives frequencies for several of those {\eva i} combinations.
-Assuming there are three glyphs {\eva i}, {\eva in}, and {\eva iin}, it is of course difficult to determine when there actually is a {\eva in} or a {\eva iin}.
-
-\begin{table}[ht]
-\center
-\begin{tabular}{lr}
-   \hline
-   Glyph          & Count   \\
-   \hline\hline
-   {\eva i}       &   590   \\
-   {\eva ii}      &   195   \\
-   {\eva iii}     &    10   \\
-   {\eva n}       &   148   \\
-   {\eva in}      & 1,752   \\
-   {\eva iin}     & 4,076   \\
-   {\eva iiin}    &   154   \\
-   {\eva iiiin}   &     2   \\
-   \hline
-\end{tabular}
-\caption{Glyph frequencies in Takahashi's transliteration for several {\eva i} combinations.}
-\label{tab:count_i}
-\end{table}
-
-This being said, I tentatively stipulate a set of 22 glyphs.
-Table \ref{tab:count_glyph} gives frequencies for those glyphs.
-They are counted as follows:
-
-\begin{itemize}
-   \item The glyphs {\eva a}, {\eva d}, {\eva e}, {\eva g}, {\eva I}, {\eva l}, {\eva m}, {\eva o}, {\eva q}, {\eva r}, {\eva s}, {\eva v}, {\eva x}, and {\eva y} are simply counted as before. Hence, frequencies are identical with Table \ref{tab:count_translit}.
-   \item The glyph {\eva Sh} is counted every time {\eva S} and {\eva h} appear consecutively.
-   \item The glyph {\eva ch} is counted every time {\eva c} and {\eva h} appear consecutively, as well as in cases where there is {\eva T}, {\eva K}, {\eva P}, or {\eva F} between them.
-   \item The glyph {\eva t} is counted every time {\eva t} or {\eva T} appears.
-   \item The glyph {\eva k} is counted every time {\eva k}, {\eva K}, or {\eva z} appears.
-   \item The glyph {\eva p} is counted every time {\eva p} or {\eva P} appears.
-   \item The glyph {\eva f} is counted every time {\eva f} or {\eva F} appears.
-   \item The glyph {\eva in} is counted every time {\eva i} and {\eva n} appear consecutively without there being a preceding second {\eva i}.
-   \item The glyph {\eva iin} is counted every time {\eva i}, {\eva i}, and {\eva n} appear consecutively.
-   \item The glyph {\eva i} is counted every time it is not part of {\eva in} or {\eva iin} as well as in instances of {\eva I}.
-\end{itemize}
-
-\begin{table}[ht]
-\center
-\begin{tabular}{lrr}
-   \hline
-   Glyph        & Count     & Percent   \\
-   \hline\hline
-   {\eva o}     &  25,468   & 15.636    \\
-   {\eva e}     &  20,070   & 12.322    \\
-   {\eva y}     &  17,655   & 10.839    \\
-   {\eva a}     &  14,281   &  8.768    \\
-   {\eva ch}    &  13,154   &  8.076    \\
-   {\eva d}     &  12,973   &  7.965    \\
-   {\eva k}     &  10,934   &  6.713    \\
-   {\eva l}     &  10,518   &  6.458    \\
-   {\eva r}     &   7,456   &  4.578    \\
-   {\eva t}     &   6,944   &  4.263    \\
-   {\eva q}     &   5,423   &  3.329    \\
-   {\eva Sh}    &   4,501   &  2.763    \\
-   {\eva iin}   &   4,232   &  2.598    \\
-   {\eva s}     &   2,886   &  1.772    \\
-   {\eva in}    &   1,752   &  1.076    \\
-   {\eva p}     &   1,630   &  1.001    \\
-   {\eva i}     &   1,240   &  0.761    \\
-   {\eva m}     &   1,116   &  0.685    \\
-   {\eva f}     &     505   &  0.310    \\
-   {\eva g}     &     96    &  0.059    \\
-   {\eva x}     &     35    &  0.021    \\
-   {\eva v}     &      9    & <0.001    \\
-   \hline
-                & 162,878   &           \\
-   \hline
-\end{tabular}
-\caption{Glyph frequencies in Takahashi's transliteration}
-\label{tab:count_glyph}
-\end{table}
-
-
-%%%%%%%%%%%
-% ENTROPY %
-%%%%%%%%%%%
-\subsection{Entropy}\label{sec:entropy}
-Next, we take a look at the manuscript's entropy.
-To this end, we utilize the conceptualization of entropy by \citet{shannon_mathematical_1948}.
-As shown in (\ref{eq:shannon}), the entropy \textit{H} of a 
-
-\begin{equation}\label{eq:shannon}
-   H(X)=-\sum_{i=1}^{n} P\left(x_{i}\right) \log P\left(x_{i}\right)
-\end{equation}
+Additionally, in Section \ref{sec:analysis}, some basic analyses are presented. First, in Section \ref{sec:frequency}, glyph frequencies are counted. In Section \ref{sec:entropy}, then, entropy is calculated.
 
 
 %%%%%%%%%%%%%%%%%
@@ -1363,6 +1189,218 @@ Folio 12 is missing from the manuscript.
 \begin{locator}[P1, 7]\end{locator} {\eva Sho otor ShocKhy ShocThy otoldy dShor dol dar}\\
 \begin{locator}[P1, 8]\end{locator} {\eva oschotShl daiin okchey kol daiin Shol dSho otaiin}\\
 \begin{locator}[P1, 9]\end{locator} {\eva ytchol deey yteol deaiin}\\
+
+
+%%%%%%%%%%%%
+% ANALYSIS %
+%%%%%%%%%%%%
+\clearpage
+\section{Analysis}\label{sec:analysis}
+
+
+%%%%%%%%%%%%%
+% FREQUENCY %
+%%%%%%%%%%%%%
+\subsection{Glyph Frequencies}\label{sec:frequency}
+Based on a transliteration by Takahashi (see Section \ref{sec:introduction}), a first basic analysis of frequencies can be performed, by simply counting each Latin letter of the transliteration.
+This results in Table \ref{tab:count_translit}, listing all letters that are used.
+
+\begin{table}[ht]
+\center
+\begin{tabular}{ccrr}
+   \hline
+   Letter       &   Glyph      & \multicolumn{2}{c}{Count}       \\
+                &              & Takahashi   & Takahashi/Bauer   \\
+   \hline\hline
+   \texttt{o}   &   {\eva o}   & 25,468      &                   \\
+   \texttt{e}   &   {\eva e}   & 20,070      &                   \\
+   \texttt{h}   &   {\eva h}   & 17,856      &                   \\
+   \texttt{y}   &   {\eva y}   & 17,655      &                   \\
+   \texttt{a}   &   {\eva a}   & 14,281      &                   \\
+   \texttt{c}   &   {\eva c}   & 13,314      &                   \\
+   \texttt{d}   &   {\eva d}   & 12,973      &                   \\
+   \texttt{i}   &   {\eva i}   & 11,660      &                   \\
+   \texttt{l}   &   {\eva l}   & 10,518      &                   \\
+   \texttt{k}   &   {\eva k}   &  9,996      &                   \\
+   \texttt{r}   &   {\eva r}   &  7,456      &                   \\
+   \texttt{n}   &   {\eva n}   &  6,141      &                   \\
+   \texttt{t}   &   {\eva t}   &  5,968      &                   \\
+   \texttt{q}   &   {\eva q}   &  5,423      &                   \\
+   \texttt{S}   &   {\eva S}   &  4,501      &                   \\
+   \texttt{s}   &   {\eva s}   &  2,886      &                   \\
+   \texttt{p}   &   {\eva p}   &  1,406      &                   \\
+   \texttt{m}   &   {\eva m}   &  1,116      &                   \\
+   \texttt{T}   &   {\eva T}   &    976      &                   \\
+   \texttt{K}   &   {\eva K}   &    938      &                   \\
+   \texttt{f}   &   {\eva f}   &    425      &                   \\
+   \texttt{P}   &   {\eva P}   &    224      &                   \\
+   \texttt{g}   &   {\eva g}   &     96      &                   \\
+   \texttt{F}   &   {\eva F}   &     80      &                   \\
+   \texttt{I}   &   {\eva I}   &     72      &                   \\
+   \texttt{x}   &   {\eva x}   &     35      &                   \\
+   \texttt{v}   &   {\eva v}   &      9      &                   \\
+   \texttt{z}   &   {\eva z}   &      2      &                   \\
+   \hline
+\end{tabular}
+\caption{Letter frequencies in Takahashi's transliteration.}
+\label{tab:count_translit}
+\end{table}
+
+Determining what counts as \textit{one} glyph, though, is in some cases an interpretative act.
+It seems straightforward to assume that {\eva c} and {\eva h} are one glyph (i.e., {\eva ch}).
+Likewise, {\eva S} and {\eva h} could be interpreted as another glyph (i.e., {\eva Sh}).
+Additionally, one \textit{might} interpret instances of {\eva cTh}, {\eva cKh}, {\eva cPh}, or {\eva cFh} as representing {\eva ch} (or {\eva Sh}), on the one hand, and {\eva t}, {\eva k}, {\eva p}, or {\eva f}, on the other.
+Concerning those ``gallows'' characters, as they have come to be called, it is not clear whether {\eva t} and {\eva k} or {\eva p} and {\eva f} are variations of the same glyphs, only diverging in one small loop (as \cite{tiltman_voynich_1967} seems to have interpreted them).
+In the following, the four gallows will be treated as distinct glyphs, as has become customary.
+Accordingly, Table \ref{tab:count_c} gives frequencies for several {\eva c} combinations, taking into account four forms of ``pedestalled gallows''.
+The table also includes three instances that bear some resemblance to Latin abbreviations (also see \cite[p. 95]{dimperio_voynich_1978}).
+
+\begin{table}[ht]
+\center
+\begin{tabular}{ccrr}
+   \hline
+   Letter(s)      & Glyph        & \multicolumn{2}{c}{Count}       \\
+                  &              & Takahashi   & Takahashi/Bauer   \\
+   \hline\hline
+   \texttt{ch}    & {\eva ch}    & 11,008      &                   \\
+   \texttt{Sh}    & {\eva Sh}    &  4,501      &                   \\
+   \texttt{cTh}   & {\eva cTh}   &    950      &                   \\
+   \texttt{cKh}   & {\eva cKh}   &    906      &                   \\
+   \texttt{cPh}   & {\eva cPh}   &    216      &                   \\
+   \texttt{cFh}   & {\eva cFh}   &     74      &                   \\
+   \texttt{c}     & {\eva c}     &    143      &                   \\
+   \texttt{co}    & {\eva co}    &      9      &                   \\
+   \texttt{cy}    & {\eva cy}    &      7      &                   \\
+   \hline
+\end{tabular}
+\caption{Glyph frequencies in Takahashi's transliteration for several {\eva c} combinations.}
+\label{tab:count_c}
+\end{table}
+
+Furthermore, while there are instances of a single {\eva i}, it is not clear whether instances like {\eva ii} and {\eva iii} or combinations with {\eva n} like {\eva in} or {\eva iin} represent separate glyphs.
+Table \ref{tab:count_i} gives frequencies for several of those {\eva i} combinations.
+Assuming there are three glyphs {\eva i}, {\eva in}, and {\eva iin}, it is of course difficult to determine when there actually is a {\eva in} or a {\eva iin}.
+
+\begin{table}[ht]
+\center
+\begin{tabular}{ccrr}
+   \hline
+   Letter(s)        & Glyph          & \multicolumn{2}{c}{Count}       \\
+                    &                & Takahashi   & Takahashi/Bauer   \\
+   \hline\hline
+   \texttt{i}       & {\eva i}       &   590       &                   \\
+   \texttt{ii}      & {\eva ii}      &   195       &                   \\
+   \texttt{iii}     & {\eva iii}     &    10       &                   \\
+   \texttt{n}       & {\eva n}       &   148       &                   \\
+   \texttt{in}      & {\eva in}      & 1,752       &                   \\
+   \texttt{iin}     & {\eva iin}     & 4,076       &                   \\
+   \texttt{iiin}    & {\eva iiin}    &   154       &                   \\
+   \texttt{iiiin}   & {\eva iiiin}   &     2       &                   \\
+   \hline
+\end{tabular}
+\caption{Glyph frequencies in Takahashi's transliteration for several {\eva i} combinations.}
+\label{tab:count_i}
+\end{table}
+
+This being said, I tentatively stipulate a set of 22 glyphs.
+Table \ref{tab:count_glyph} gives frequencies for those glyphs.
+They are counted according to the following rules:
+
+\begin{itemize}
+   \item The glyphs {\eva a}, {\eva d}, {\eva e}, {\eva g}, {\eva I}, {\eva l}, {\eva m}, {\eva o}, {\eva q}, {\eva r}, {\eva s}, {\eva v}, {\eva x}, and {\eva y} are simply counted as before. Hence, frequencies are identical with Table \ref{tab:count_translit}.
+   \item The glyph {\eva Sh} is counted every time {\eva S} and {\eva h} appear consecutively.
+   \item The glyph {\eva ch} is counted every time {\eva c} and {\eva h} appear consecutively, as well as in cases where there is {\eva T}, {\eva K}, {\eva P}, or {\eva F} between them.
+   \item The glyph {\eva t} is counted every time {\eva t} or {\eva T} appears.
+   \item The glyph {\eva k} is counted every time {\eva k}, {\eva K}, or {\eva z} appears.
+   \item The glyph {\eva p} is counted every time {\eva p} or {\eva P} appears.
+   \item The glyph {\eva f} is counted every time {\eva f} or {\eva F} appears.
+   \item The glyph {\eva in} is counted every time {\eva i} and {\eva n} appear consecutively without there being a preceding second {\eva i}.
+   \item The glyph {\eva iin} is counted every time {\eva i}, {\eva i}, and {\eva n} appear consecutively.
+   \item The glyph {\eva i} is counted every time it is not part of {\eva in} or {\eva iin} as well as in instances of {\eva I}.
+\end{itemize}
+
+\begin{table}[ht]
+\center
+\begin{tabular}{ccrrrr}
+   \hline
+   Letter(s)      & Glyph        & \multicolumn{4}{c}{Count (Percent)}                                     \\
+                  &              & \multicolumn{2}{c}{Takahashi}   & \multicolumn{2}{c}{Takahashi/Bauer}   \\
+   \hline\hline
+   \texttt{o}     & {\eva o}     &  25,468   & (15.636)            &       &                               \\
+   \texttt{e}     & {\eva e}     &  20,070   & (12.322)            &       &                               \\
+   \texttt{y}     & {\eva y}     &  17,655   & (10.839)            &       &                               \\
+   \texttt{a}     & {\eva a}     &  14,281   &  (8.768)            &       &                               \\
+   \texttt{ch}    & {\eva ch}    &  13,154   &  (8.076)            &       &                               \\
+   \texttt{d}     & {\eva d}     &  12,973   &  (7.965)            &       &                               \\
+   \texttt{k}     & {\eva k}     &  10,934   &  (6.713)            &       &                               \\
+   \texttt{l}     & {\eva l}     &  10,518   &  (6.458)            &       &                               \\
+   \texttt{r}     & {\eva r}     &   7,456   &  (4.578)            &       &                               \\
+   \texttt{t}     & {\eva t}     &   6,944   &  (4.263)            &       &                               \\
+   \texttt{q}     & {\eva q}     &   5,423   &  (3.329)            &       &                               \\
+   \texttt{Sh}    & {\eva Sh}    &   4,501   &  (2.763)            &       &                               \\
+   \texttt{iin}   & {\eva iin}   &   4,232   &  (2.598)            &       &                               \\
+   \texttt{s}     & {\eva s}     &   2,886   &  (1.772)            &       &                               \\
+   \texttt{in}    & {\eva in}    &   1,752   &  (1.076)            &       &                               \\
+   \texttt{p}     & {\eva p}     &   1,630   &  (1.001)            &       &                               \\
+   \texttt{i}     & {\eva i}     &   1,240   &  (0.761)            &       &                               \\
+   \texttt{m}     & {\eva m}     &   1,116   &  (0.685)            &       &                               \\
+   \texttt{f}     & {\eva f}     &     505   &  (0.310)            &       &                               \\
+   \texttt{g}     & {\eva g}     &     96    &  (0.059)            &       &                               \\
+   \texttt{x}     & {\eva x}     &     35    &  (0.021)            &       &                               \\
+   \texttt{v}     & {\eva v}     &      9    & (<0.001)            &       &                               \\
+   \hline
+                  &              & 162,878   &                     &       &                               \\
+   \hline
+\end{tabular}
+\caption{Glyph frequencies in Takahashi's transliteration}
+\label{tab:count_glyph}
+\end{table}
+
+
+%%%%%%%%%%%
+% ENTROPY %
+%%%%%%%%%%%
+\subsection{Entropy}\label{sec:entropy}
+Next, let's take a look at the manuscript's entropy.
+To this end, I utilize the conceptualization of information entropy by \citet{shannon_mathematical_1948}, basically measuring the variability of glyphs in the manuscript.
+Entropy $H$ can be defined as shown in (\ref{eq:shannon}), where $p_{z}$ denotes the probability of $z$, with $z$ being an element of the alphabet $Z$.
+
+\begin{equation}\label{eq:shannon}
+   H=-\sum_{z\in Z}p_{z}\log_{2}p_{z}
+\end{equation}
+
+\noindent To calculate the entropy, I suppose the above stipulated glyphs to form alphabet $Z$ (see Table \ref{tab:count_glyph}).
+Accordingly, changes to the corpus are made so that each stipulated glyph has a single corresponding character in the transliteration.
+Changes are made according to the following rules:
+
+\begin{itemize}
+   \item The glyph {\eva Sh} is represented by \texttt{Sh} in EVA. For calculating the entropy, every time \texttt{S} and \texttt{h} appear consecutively, they are replaced by \texttt{1}
+   \item The glyph {\eva ch} is represented by \texttt{ch} in EVA. Every time \texttt{c} and \texttt{h} appear consecutively, they are replaced by \texttt{2}. Following the above stated rules for glyph counting, {\eva ch} is also believed to be present when {\eva c} and {\eva h} are separated by {\eva T}, {\eva K}, {\eva P}, or {\eva F}, represented by \texttt{T}, \texttt{K}, \texttt{P}, or \texttt{F} in EVA. In those cases, it is believed that {\eva t}, {\eva k}, {\eva p}, or {\eva f} are also present. They are represented by \texttt{t},\texttt{k}, \texttt{p}, or \texttt{f}  in EVA. Hence, they are replaced by \texttt{2t}, \texttt{2k}, \texttt{2p}, or \texttt{2f}.
+   \item The glyph {\eva z}, represented by \texttt{z} in EVA, is counted as {\eva k}, represented by \texttt{k} in EVA. Hence, every \texttt{z} is replaced by \texttt{k}.
+   \item The glyph {\eva iin} is represented by \texttt{iin} in EVA. Every time \texttt{i}, \texttt{i}, and \texttt{n} appear consecutively, they are replaced by \texttt{3}.   
+   \item The glyph {\eva in} is represented by \texttt{in} in EVA. Every time \texttt{i} and \texttt{n} appear consecutively, they are replaced by \texttt{4}.
+   \item Lastly, the glyph {\eva I}, represented by \texttt{I} in EVA, is counted as {\eva i}, represented by \texttt{i} in EVA. Hence, every \texttt{I} is replaced by \texttt{i}.
+\end{itemize}
+
+\noindent Calculating the entropy for this converted corpus results in $H=3.866$.
+As comparisons, Table \ref{tab:entropy} also offers the entropy values for the unconverted transliteration as well as for a randomly generated text consisting of 22 different characters and being 234,956 characters long (just as the converted transliteration).
+
+\begin{table}[ht]
+\center
+\begin{tabular}{lr}
+   \hline
+   Corpus                        & \multicolumn{1}{c}{$H$}   \\
+   \hline\hline
+   Takahashi                     & 4.021                     \\
+   Takahashi (converted)         & 3.866                     \\
+   Takahashi/Bauer               &                           \\
+   Takahashi/Bauer (converted)   &                           \\
+   Random text                   & 4.459                     \\
+   \hline
+\end{tabular}
+\caption{Entropy ($H$) for different transliterations.}
+\label{tab:entropy}
+\end{table}
 
 
 %%%%%%%%%%%%%%
