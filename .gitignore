@@ -33,3 +33,6 @@
 
 # Python
 *.ipynb_checkpoints*
+
+# R
+*.Rhistory
