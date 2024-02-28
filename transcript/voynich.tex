@@ -2810,7 +2810,7 @@ Folios 59\,--\,64 are missing from the manuscript.
 In the following, we take a look at the frequencies of glyphs and words from different perspectives. First, we try to simply count both for the whole manuscript.
 
 
-\subsubsection{Overall Glyph and Word Frequencies}\label{sec:frequencies_overall}
+\subsubsection{Overall Glyph Frequencies and Word Count}\label{sec:frequencies_overall}
 Based on a transliteration by Takahashi (see Section \ref{sec:introduction}), a first basic analysis of frequencies can be performed, by simply counting each Latin letter of the transliteration.
 This results in Table \ref{tab:count_translit}, listing all letters that are used.
 
@@ -2818,37 +2818,39 @@ This results in Table \ref{tab:count_translit}, listing all letters that are use
 \center
 \begin{tabular}{ccrr}
    \hline
-   Letter       &   Glyph      & \multicolumn{2}{c}{Count}       \\
-                &              & Takahashi   & Takahashi/Bauer   \\
+   Letter       &   Representation   & \multicolumn{2}{c}{Count}        \\
+                &                    & Takahashi    & Takahashi/Bauer   \\
    \hline\hline
-   \texttt{o}   &   {\eva o}   & 25,468      &                   \\
-   \texttt{e}   &   {\eva e}   & 20,070      &                   \\
-   \texttt{h}   &   {\eva h}   & 17,856      &                   \\
-   \texttt{y}   &   {\eva y}   & 17,655      &                   \\
-   \texttt{a}   &   {\eva a}   & 14,281      &                   \\
-   \texttt{c}   &   {\eva c}   & 13,314      &                   \\
-   \texttt{d}   &   {\eva d}   & 12,973      &                   \\
-   \texttt{i}   &   {\eva i}   & 11,660      &                   \\
-   \texttt{l}   &   {\eva l}   & 10,518      &                   \\
-   \texttt{k}   &   {\eva k}   &  9,996      &                   \\
-   \texttt{r}   &   {\eva r}   &  7,456      &                   \\
-   \texttt{n}   &   {\eva n}   &  6,141      &                   \\
-   \texttt{t}   &   {\eva t}   &  5,968      &                   \\
-   \texttt{q}   &   {\eva q}   &  5,423      &                   \\
-   \texttt{S}   &   {\eva S}   &  4,501      &                   \\
-   \texttt{s}   &   {\eva s}   &  2,886      &                   \\
-   \texttt{p}   &   {\eva p}   &  1,406      &                   \\
-   \texttt{m}   &   {\eva m}   &  1,116      &                   \\
-   \texttt{T}   &   {\eva T}   &    976      &                   \\
-   \texttt{K}   &   {\eva K}   &    938      &                   \\
-   \texttt{f}   &   {\eva f}   &    425      &                   \\
-   \texttt{P}   &   {\eva P}   &    224      &                   \\
-   \texttt{g}   &   {\eva g}   &     96      &                   \\
-   \texttt{F}   &   {\eva F}   &     80      &                   \\
-   \texttt{I}   &   {\eva I}   &     72      &                   \\
-   \texttt{x}   &   {\eva x}   &     35      &                   \\
-   \texttt{v}   &   {\eva v}   &      9      &                   \\
-   \texttt{z}   &   {\eva z}   &      2      &                   \\
+   \texttt{o}   &   {\eva o}         &  25,468      &                   \\
+   \texttt{e}   &   {\eva e}         &  20,070      &                   \\
+   \texttt{h}   &   {\eva h}         &  17,856      &                   \\
+   \texttt{y}   &   {\eva y}         &  17,655      &                   \\
+   \texttt{a}   &   {\eva a}         &  14,281      &                   \\
+   \texttt{c}   &   {\eva c}         &  13,314      &                   \\
+   \texttt{d}   &   {\eva d}         &  12,973      &                   \\
+   \texttt{i}   &   {\eva i}         &  11,660      &                   \\
+   \texttt{l}   &   {\eva l}         &  10,518      &                   \\
+   \texttt{k}   &   {\eva k}         &   9,996      &                   \\
+   \texttt{r}   &   {\eva r}         &   7,456      &                   \\
+   \texttt{n}   &   {\eva n}         &   6,141      &                   \\
+   \texttt{t}   &   {\eva t}         &   5,968      &                   \\
+   \texttt{q}   &   {\eva q}         &   5,423      &                   \\
+   \texttt{S}   &   {\eva S}         &   4,501      &                   \\
+   \texttt{s}   &   {\eva s}         &   2,886      &                   \\
+   \texttt{p}   &   {\eva p}         &   1,406      &                   \\
+   \texttt{m}   &   {\eva m}         &   1,116      &                   \\
+   \texttt{T}   &   {\eva T}         &     976      &                   \\
+   \texttt{K}   &   {\eva K}         &     938      &                   \\
+   \texttt{f}   &   {\eva f}         &     425      &                   \\
+   \texttt{P}   &   {\eva P}         &     224      &                   \\
+   \texttt{g}   &   {\eva g}         &      96      &                   \\
+   \texttt{F}   &   {\eva F}         &      80      &                   \\
+   \texttt{I}   &   {\eva I}         &      72      &                   \\
+   \texttt{x}   &   {\eva x}         &      35      &                   \\
+   \texttt{v}   &   {\eva v}         &       9      &                   \\
+   \texttt{z}   &   {\eva z}         &       2      &                   \\
+   \hline
+                &                    & 234,956      &                   \\
    \hline
 \end{tabular}
 \caption{Letter frequencies in Takahashi's transliteration.}
@@ -2868,21 +2870,23 @@ The table also includes three instances that bear some resemblance to Latin abbr
 \center
 \begin{tabular}{ccrr}
    \hline
-   Letter(s)      & Glyph        & \multicolumn{2}{c}{Count}       \\
-                  &              & Takahashi   & Takahashi/Bauer   \\
+   Letter(s)      & Representation   & \multicolumn{2}{c}{Count}       \\
+                  &                  & Takahashi   & Takahashi/Bauer   \\
    \hline\hline
-   \texttt{ch}    & {\eva ch}    & 11,008      &                   \\
-   \texttt{Sh}    & {\eva Sh}    &  4,501      &                   \\
-   \texttt{cTh}   & {\eva cTh}   &    950      &                   \\
-   \texttt{cKh}   & {\eva cKh}   &    906      &                   \\
-   \texttt{cPh}   & {\eva cPh}   &    216      &                   \\
-   \texttt{cFh}   & {\eva cFh}   &     74      &                   \\
-   \texttt{c}     & {\eva c}     &    143      &                   \\
-   \texttt{co}    & {\eva co}    &      9      &                   \\
-   \texttt{cy}    & {\eva cy}    &      7      &                   \\
+   \texttt{ch}    & {\eva ch}        & 11,008      &                   \\
+   \texttt{Sh}    & {\eva Sh}        &  4,501      &                   \\
+   \texttt{cTh}   & {\eva cTh}       &    950      &                   \\
+   \texttt{cKh}   & {\eva cKh}       &    906      &                   \\
+   \texttt{cPh}   & {\eva cPh}       &    216      &                   \\
+   \texttt{cFh}   & {\eva cFh}       &     74      &                   \\
+   \texttt{c}     & {\eva c}         &    143      &                   \\
+   \texttt{co}    & {\eva co}        &      9      &                   \\
+   \texttt{cy}    & {\eva cy}        &      7      &                   \\
+   \hline
+                  &                  & 17,814      &                   \\
    \hline
 \end{tabular}
-\caption{Glyph frequencies in Takahashi's transliteration for several {\eva c} combinations.}
+\caption{Frequencies in Takahashi's transliteration for several {\eva c} combinations.}
 \label{tab:count_c}
 \end{table}
 
@@ -2894,20 +2898,22 @@ Assuming there are three glyphs {\eva i}, {\eva in}, and {\eva iin}, it is of co
 \center
 \begin{tabular}{ccrr}
    \hline
-   Letter(s)        & Glyph          & \multicolumn{2}{c}{Count}       \\
-                    &                & Takahashi   & Takahashi/Bauer   \\
+   Letter(s)        & Representation   & \multicolumn{2}{c}{Count}       \\
+                    &                  & Takahashi   & Takahashi/Bauer   \\
    \hline\hline
-   \texttt{i}       & {\eva i}       &   590       &                   \\
-   \texttt{ii}      & {\eva ii}      &   195       &                   \\
-   \texttt{iii}     & {\eva iii}     &    10       &                   \\
-   \texttt{n}       & {\eva n}       &   148       &                   \\
-   \texttt{in}      & {\eva in}      & 1,752       &                   \\
-   \texttt{iin}     & {\eva iin}     & 4,076       &                   \\
-   \texttt{iiin}    & {\eva iiin}    &   154       &                   \\
-   \texttt{iiiin}   & {\eva iiiin}   &     2       &                   \\
+   \texttt{i}       & {\eva i}         &   590       &                   \\
+   \texttt{ii}      & {\eva ii}        &   195       &                   \\
+   \texttt{iii}     & {\eva iii}       &    10       &                   \\
+   \texttt{n}       & {\eva n}         &   148       &                   \\
+   \texttt{in}      & {\eva in}        & 1,752       &                   \\
+   \texttt{iin}     & {\eva iin}       & 4,076       &                   \\
+   \texttt{iiin}    & {\eva iiin}      &   154       &                   \\
+   \texttt{iiiin}   & {\eva iiiin}     &     2       &                   \\
+   \hline
+                    &                  & 6,927       &                   \\
    \hline
 \end{tabular}
-\caption{Glyph frequencies in Takahashi's transliteration for several {\eva i} combinations.}
+\caption{Frequencies in Takahashi's transliteration for several {\eva i} combinations.}
 \label{tab:count_i}
 \end{table}
 
