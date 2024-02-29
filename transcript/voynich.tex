@@ -16,7 +16,9 @@
 \usepackage[natbib,authordate,backend=bibtex]{biblatex-chicago}
    \bibliography{references}
 \usepackage[makeroom]{cancel}
+\usepackage{caption}
 \usepackage[a4paper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage{color,graphicx}
 \usepackage{fontspec}
    \newfontfamily\eva{fairfax_eva_hd.ttf}
 \usepackage{xcolor}
@@ -2814,7 +2816,7 @@ In the following, we take a look at the frequencies of glyphs and words from dif
 
 \subsubsection{Overall Glyph Frequencies and Word Count}\label{sec:frequencies_overall}
 Based on a transliteration by Takahashi (see Section \ref{sec:introduction}), a first basic analysis of frequencies can be performed, by simply counting each Latin letter of the transliteration.
-This results in Table \ref{tab:count_translit}, listing all letters that are used.
+This results in Table \ref{tab:count_translit}, listing all letters that are used (also see Figure \ref{fig:count_translit}).
 
 \begin{table}[ht]
 \center
@@ -2858,6 +2860,13 @@ This results in Table \ref{tab:count_translit}, listing all letters that are use
 \caption{Letter frequencies in Takahashi's transliteration.}
 \label{tab:count_translit}
 \end{table}
+
+\begin{figure}
+   \centering
+   \includegraphics[scale=0.5]{figures/count_translit.pdf}
+   \caption{Letter frequencies in Takahashi's transliteration.}
+   \label{fig:count_translit}
+\end{figure}
 
 Determining what counts as \textit{one} glyph, though, is in some cases an interpretative act.
 It seems straightforward to assume that {\eva c} and {\eva h} are one glyph (i.e., {\eva ch}).
