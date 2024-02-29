@@ -2874,7 +2874,7 @@ Likewise, {\eva S} and {\eva h} could be interpreted as another glyph (i.e., {\e
 Additionally, one \textit{might} interpret instances of {\eva cTh}, {\eva cKh}, {\eva cPh}, or {\eva cFh} as representing {\eva ch} (or {\eva Sh}), on the one hand, and {\eva t}, {\eva k}, {\eva p}, or {\eva f}, on the other.
 Concerning those ``gallows'' characters, as they have come to be called, it is not clear whether {\eva t} and {\eva k} or {\eva p} and {\eva f} are variations of the same glyphs, only diverging in one small loop (as \cite{tiltman_voynich_1967} seems to have interpreted them).
 In the following, the four gallows will be treated as distinct glyphs, as has become customary.
-Accordingly, Table \ref{tab:count_c} gives frequencies for several {\eva c} combinations, taking into account four forms of ``pedestalled gallows''.
+Accordingly, Table \ref{tab:count_c} gives frequencies for several {\eva c} combinations, taking into account four forms of ``pedestalled gallows'' (also see Figure \ref{fig:count_c}).
 The table also includes three instances that bear some resemblance to Latin abbreviations (also see \cite[p. 95]{dimperio_voynich_1978}).
 
 \begin{table}[ht]
@@ -2901,8 +2901,15 @@ The table also includes three instances that bear some resemblance to Latin abbr
 \label{tab:count_c}
 \end{table}
 
+\begin{figure}
+   \centering
+   \includegraphics[scale=0.5]{figures/count_c.pdf}
+   \caption{Frequencies in Takahashi's transliteration for several {\eva c} combinations.}
+   \label{fig:count_c}
+\end{figure}
+
 Furthermore, while there are instances of a single {\eva i}, it is not clear whether instances like {\eva ii} and {\eva iii} or combinations with {\eva n} like {\eva in} or {\eva iin} represent separate glyphs.
-Table \ref{tab:count_i} gives frequencies for several of those {\eva i} combinations.
+Table \ref{tab:count_i} gives frequencies for several of those {\eva i} combinations (also see Figure \ref{fig:count_i}).
 Assuming there are three glyphs {\eva i}, {\eva in}, and {\eva iin}, it is of course difficult to determine when there actually is a {\eva in} or a {\eva iin}.
 
 \begin{table}[ht]
@@ -2928,8 +2935,15 @@ Assuming there are three glyphs {\eva i}, {\eva in}, and {\eva iin}, it is of co
 \label{tab:count_i}
 \end{table}
 
+\begin{figure}
+   \centering
+   \includegraphics[scale=0.5]{figures/count_i.pdf}
+   \caption{Frequencies in Takahashi's transliteration for several {\eva i} combinations.}
+   \label{fig:count_i}
+\end{figure}
+
 This being said, I tentatively stipulate a set of 22 glyphs.
-Table \ref{tab:count_glyph} gives frequencies for those glyphs.
+Table \ref{tab:count_glyph} gives frequencies for those glyphs (also see Figure \ref{fig:count_glyph}).
 They are counted according to the following rules:
 
 \begin{itemize}
@@ -2971,9 +2985,9 @@ They are counted according to the following rules:
    \texttt{i}     & {\eva i}     &   1,240   &  (0.761)            &       &                               \\
    \texttt{m}     & {\eva m}     &   1,116   &  (0.685)            &       &                               \\
    \texttt{f}     & {\eva f}     &     505   &  (0.310)            &       &                               \\
-   \texttt{g}     & {\eva g}     &     96    &  (0.059)            &       &                               \\
-   \texttt{x}     & {\eva x}     &     35    &  (0.021)            &       &                               \\
-   \texttt{v}     & {\eva v}     &      9    & (<0.001)            &       &                               \\
+   \texttt{g}     & {\eva g}     &      96   &  (0.059)            &       &                               \\
+   \texttt{x}     & {\eva x}     &      35   &  (0.021)            &       &                               \\
+   \texttt{v}     & {\eva v}     &       9   & (<0.001)            &       &                               \\
    \hline
                   &              & 162,878   &                     &       &                               \\
    \hline
@@ -2981,6 +2995,13 @@ They are counted according to the following rules:
 \caption{Glyph frequencies in Takahashi's transliteration}
 \label{tab:count_glyph}
 \end{table}
+
+\begin{figure}
+   \centering
+   \includegraphics[scale=0.5]{figures/count_glyph.pdf}
+   \caption{Glyph frequencies in Takahashi's transliteration.}
+   \label{fig:count_glyph}
+\end{figure}
 
 \subsubsection{Glyph and Word Frequencies for Currier Languages}\label{sec:frequencies_currier}
 
@@ -3005,7 +3026,7 @@ Changes are made according to the following rules:
 
 \begin{itemize}
    \item The glyph {\eva Sh} is represented by \texttt{Sh} in EVA. For calculating the entropy, every time \texttt{S} and \texttt{h} appear consecutively, they are replaced by \texttt{1}
-   \item The glyph {\eva ch} is represented by \texttt{ch} in EVA. Every time \texttt{c} and \texttt{h} appear consecutively, they are replaced by \texttt{2}. Following the above stated rules for glyph counting, {\eva ch} is also believed to be present when {\eva c} and {\eva h} are separated by {\eva T}, {\eva K}, {\eva P}, or {\eva F}, represented by \texttt{T}, \texttt{K}, \texttt{P}, or \texttt{F} in EVA. In those cases, it is believed that {\eva t}, {\eva k}, {\eva p}, or {\eva f} are also present. They are represented by \texttt{t},\texttt{k}, \texttt{p}, or \texttt{f}  in EVA. Hence, they are replaced by \texttt{2t}, \texttt{2k}, \texttt{2p}, or \texttt{2f}.
+   \item The glyph {\eva ch} is represented by \texttt{ch} in EVA. Every time \texttt{c} and \texttt{h} appear consecutively, they are replaced by \texttt{2}. Following the above stated rules for glyph counting, {\eva ch} is also believed to be present when {\eva c} and {\eva h} are separated by {\eva T}, {\eva K}, {\eva P}, or {\eva F}, represented by \texttt{T}, \texttt{K}, \texttt{P}, or \texttt{F} in EVA. In those cases, it is believed that {\eva t}, {\eva k}, {\eva p}, or {\eva f} are also present. They are represented by \texttt{t}, \texttt{k}, \texttt{p}, or \texttt{f}  in EVA. Hence, they are replaced by \texttt{2t}, \texttt{2k}, \texttt{2p}, or \texttt{2f}.
    \item The glyph {\eva z}, represented by \texttt{z} in EVA, is counted as {\eva k}, represented by \texttt{k} in EVA. Hence, every \texttt{z} is replaced by \texttt{k}.
    \item The glyph {\eva iin} is represented by \texttt{iin} in EVA. Every time \texttt{i}, \texttt{i}, and \texttt{n} appear consecutively, they are replaced by \texttt{3}.   
    \item The glyph {\eva in} is represented by \texttt{in} in EVA. Every time \texttt{i} and \texttt{n} appear consecutively, they are replaced by \texttt{4}.
